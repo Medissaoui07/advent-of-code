@@ -3,7 +3,7 @@
 
 import re 
 def solve_problem_part1():
-    with open("input.txt" , "r") as file : 
+    with open("day3/input.txt" , "r") as file : 
         corruptet_data= file.read()
 
     pattern = r'mul\((\d{1,3}),(\d{1,3})\)'
@@ -16,7 +16,7 @@ def solve_problem_part1():
     return result
 
 def solve_problem_part2():
-    with open("input.txt" , "r") as file : 
+    with open("day3/input.txt" , "r") as file : 
         corruptet_data= file.read()
 
         
@@ -42,11 +42,11 @@ def solve_problem_part2():
 
 def main() :
     try : 
-        #result = solve_problem_part1()
+        result = solve_problem_part1()
         
-        #print(f"Result of part 1 : {result}")
-        result = solve_problem_part2()
-        print(f"Result of part 2 : {result}")
+        print(f"Result of part 1 : {result}")
+        result2 = solve_problem_part2()
+        print(f"Result of part 2 : {result2}")
     except FileNotFoundError:
         print("Error: 'input.txt' file not found.")
              

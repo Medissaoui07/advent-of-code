@@ -6,7 +6,7 @@
 def solve_problem_part1(): 
     leftlist = []
     rightlist = []
-    with open("input.txt", "r") as file:
+    with open("day1/input.txt", "r") as file:
         for line in file:
             left, right = line.strip().split()
             leftlist.append(int(left))
@@ -28,7 +28,7 @@ def solve_problem_part2():
     
     leftlist = []
     rightlist = []
-    with open("input.txt", "r") as file:
+    with open("day1/input.txt", "r") as file:
         for line in file:
             left, right = line.strip().split()
             leftlist.append(int(left))
@@ -50,9 +50,10 @@ def solve_problem_part2():
     
 def main(): 
     try:
-        #result = solve_problem_part1()
-        result = solve_problem_part2()
+        result = solve_problem_part1()
         print(f"The result is: {result}")
+        result2 = solve_problem_part2()
+        print(f"The result is: {result2}")
     except Exception as e:
         print(f"An error occurred: {e}")
 

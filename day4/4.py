@@ -2,7 +2,7 @@
 # Advent of Code 2023 - Day 4
 
 def solve_problem_part1():
-    with open("input.txt" , "r") as file : 
+    with open("day4/input.txt" , "r") as file : 
         data= file.read().strip().split('\n')
         count = 0 
      
@@ -42,7 +42,7 @@ def solve_problem_part1():
 
 
 def solve_problem_part2(): 
-    with open("input.txt", "r") as file: 
+    with open("day4/input.txt", "r") as file: 
         data = file.read().strip().split('\n')
         
     matrix = [list(line) for line in data]

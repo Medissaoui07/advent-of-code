@@ -3,7 +3,7 @@
 
 
 def solve_problem_part1():
-    with open("input.txt", "r") as file:
+    with open("day2/input.txt", "r") as file:
         data = file.read()
         nb_safe=0   
     for line in data.strip().split('\n'):
@@ -29,7 +29,7 @@ def solve_problem_part1():
     return nb_safe    
             
 def solve_problem_part2():
-    with open("input.txt", "r") as file:
+    with open("day2/input.txt", "r") as file:
         data = file.read()
         nb_safe=0   
     for line in data.strip().split('\n'):
@@ -64,9 +64,10 @@ def is_safe(levels):
 
 def main():
     try:
-        #result = solve_problem_part1()
-        result = solve_problem_part2()
+        result = solve_problem_part1()
+        result1 = solve_problem_part2()
         print(f"The result is: {result}")
+        print(f"The result1 is: {result1}")
     except Exception as e:
         print(f"An error occurred: {e}")    
 
